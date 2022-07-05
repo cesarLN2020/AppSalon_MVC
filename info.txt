@@ -1,0 +1,58 @@
+OJO Git Hub utiliza Active record
+
+Empezamos desarrollando un proyecto web
+
+Tenemos ya listos algunos archivos como:
+
+SCSS y JS
+Ya tenemos la carpeta finalizada con los estilos y con el javascript
+Esta desarrollado con SASS Y GULP
+
+Luego tenemos las carpetas vacias 
+INCLUDES:
+usando el active record ya configurado para hacer los CRUD con funciones y database.
+MODELS:
+PUBLIC:
+SRC:
+VIEWS:
+
+otros archivos como el autoload, gulpfile(trae dependencias) y composer
+
+Seccion para poder renderizar las vistas
+Router.php
+
+///////////////////////////////////// COMENZEMOS /////////////
+para descargar todas las dependencias del package.json 
+abrir terminal en el proyecto -> npm install
+
+ahora descargamos las dependencias de gulpfile
+terminal proyecto -> gulp
+
+ahora instalar el composer.json
+terminal proyecto -> composer init -> enter->Descripcion->cesar lopez <cesarMLGPRO@gmail.com> -> enter -> project -> enter -> no -> no -> yes
+
+luego configurar dentro de composer el autoload ( sirve para que las ibrerías se puedan cargar automáticamente)
+cuando se configura el composer se debe actualizar -> composer update
+
+Ahora para arrancar el proyecto se debe acceder desde la carpeta public para poder estar en el index
+php -S localhost:3000
+
+//////////////ahora en el codigo ///////////////
+
+configuramos la primer ruta del index
+creamos la carpeta de controllers y un nuevo archivo para la primer ruta
+
+creamos el 1er modelo de usuario.php con su respectivo namespace
+
+para crear una carpeta con un archivo
+primero se debe agregar al composer y decir el nombre de la variable y el nombre de la carpeta y luego actualizar composer update
+            "Controllers\\": "./controllers",
+
+
+al finalizar para protejer los accesos instalamos variables de entorno
+composer require vlucas/phpdotenv
+
+procfile
+indicamos donde empezará a ejecutarse el codigo
+
+htaccess
